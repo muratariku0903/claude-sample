@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Status
 
-This is a simple TODO application built with vanilla HTML, CSS, and JavaScript.
+This is a modern TODO application built with Next.js, TypeScript, and Tailwind CSS.
 
 ## Repository Information
 
@@ -17,22 +17,48 @@ The repository includes `.claude/settings.local.json` with permissions configure
 
 ## Project Architecture
 
+### Tech Stack
+- **Framework**: Next.js 16 (App Router)
+- **Language**: TypeScript
+- **Styling**: Tailwind CSS
+- **State Management**: React Hooks (useState, useEffect)
+- **Data Persistence**: localStorage
+
 ### File Structure
-- `index.html` - Main HTML file with app structure
-- `styles.css` - CSS styling with responsive design
-- `app.js` - JavaScript logic with TodoApp class
+```
+src/
+├── app/
+│   ├── layout.tsx      # Root layout with metadata
+│   ├── page.tsx        # Home page
+│   └── globals.css     # Global styles
+└── components/
+    └── TodoList.tsx    # Main TODO component
+```
 
 ### Features
 - Add, toggle, and delete TODO items
 - Filter tasks (all, active, completed)
 - Clear all completed tasks
 - Data persistence using localStorage
-- Responsive design for mobile and desktop
+- Responsive design with Tailwind CSS
+- Dark mode support
+- TypeScript for type safety
 
 ## Getting Started
 
-1. Open `index.html` in a web browser
-2. Start adding your TODO items
-3. Tasks are automatically saved to localStorage
+### Development
+```bash
+npm install
+npm run dev
+```
 
-No build process required - this is a pure client-side application.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+### Build for Production
+```bash
+npm run build
+npm start
+```
+
+### Deployment
+This project is configured for deployment on Vercel.
