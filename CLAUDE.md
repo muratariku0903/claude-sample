@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Status
 
-This is a newly initialized repository with no source code yet.
+This is a simple TODO application built with vanilla HTML, CSS, and JavaScript.
 
 ## Repository Information
 
@@ -15,10 +15,24 @@ This is a newly initialized repository with no source code yet.
 
 The repository includes `.claude/settings.local.json` with permissions configured for GitHub repository operations.
 
+## Project Architecture
+
+### File Structure
+- `index.html` - Main HTML file with app structure
+- `styles.css` - CSS styling with responsive design
+- `app.js` - JavaScript logic with TodoApp class
+
+### Features
+- Add, toggle, and delete TODO items
+- Filter tasks (all, active, completed)
+- Clear all completed tasks
+- Data persistence using localStorage
+- Responsive design for mobile and desktop
+
 ## Getting Started
 
-This repository is ready for project initialization. Once you add code:
+1. Open `index.html` in a web browser
+2. Start adding your TODO items
+3. Tasks are automatically saved to localStorage
 
-1. Update this file with the project's architecture and structure
-2. Document build, test, and development commands
-3. Describe key patterns and conventions used in the codebase
+No build process required - this is a pure client-side application.
